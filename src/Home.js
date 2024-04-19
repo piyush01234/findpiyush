@@ -13,19 +13,15 @@ const Home = () => {
     function showHam() {
       if (window.screenY < aboutRef.current.offsetTop) {
         setCurrentRoute("Home");
-        console.log("Home");
       }
       if (window.scrollY+200 > aboutRef.current.offsetTop) {
-        console.log("About");
         setCurrentRoute("About");
       }
       if (window.scrollY+200 > projectsRef.current.offsetTop) {
         setCurrentRoute("Projects");
-        console.log("Projects");
       }
       if (window.scrollY + 200 > contactRef.current.offsetTop) {
         setCurrentRoute("Contact");
-        console.log("Contact");
       }
     }
     
