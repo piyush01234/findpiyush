@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .App {
   text-align: center;
 }
@@ -35,4 +39,105 @@
   to {
     transform: rotate(360deg);
   }
+}
+/* 
+.main{
+  background-color: slateblue;
+  height: 100vh;
+} */
+
+
+*{
+ 
+/* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif */
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#circle{
+  /* animation: circle 1s  ease-in  infinite  ; */
+
+}
+
+@keyframes circle {
+  from{
+transform:translateY(20px) ;
+
+  }to{
+/* scale:1.5; */
+transform:translateY(-10px) ;
+  }
+  
+}
+
+.navlink {
+  color: white;
+}
+.navlink:hover{
+  transform: scale(1.2);
+  /* color: red; */
+  border-bottom: 2px solid white;
+}
+.navlinkHover{
+  transform: scale(1.2);
+  /* color: red; */
+  border-bottom: 2px solid white;
+}
+
+.navLink {
+  color: #6b46c1;
+}
+.navLink:hover{
+  transform: scale(1.2);
+  font-weight: 700;
+  /* color: red; */
+  /* border-bottom: 2px solid #6b46c1; */
+}
+
+
+#dots{
+  animation: dots 6s  alternate-reverse ease  infinite  ;
+
+}
+
+@keyframes dots {
+  from{
+transform: translateX(0%) ;
+  }to{
+/* scale:1.5; */
+transform:translateX(-30%)
+  }
+  
+}
+.flexDiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 15rem; */
+}
+@media screen and (max-width:678px) {
+  
+  .flexDiv{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* width: 15rem; */
+  }
+}
+
+
+.aboutDiv{
+  height: fit-content;
+  /* background-color: #6b46c1; */
+}
+
+.imgclip{
+  /* clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%); */
+  clip-path: circle(50% at 50% 50%);
+  /* clip-path: polygon(25% 0, 75% 0%, 100%, 50%, 75% 100%, 25% 100%, 0 50%); */
+  background: url(asset/images/imagepiyush.png);
+  height: 280px;
+  width: 295px;
+  background-size: cover;
+  border:-10px solid white;
+  /* outline: none;
+  border: none; */
 }
